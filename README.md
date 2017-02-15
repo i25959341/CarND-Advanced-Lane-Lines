@@ -70,7 +70,9 @@ Below is the list of techniques used to detect lanes.
 
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
-I use the Udacity Histogram method for identifying peaks to find the laneline initially using the threadholded binary warped images. Then us polyfit to find the coefficients.
+I use the Udacity Histogram method for identifying peaks to find the laneline initially using the threadholded binary warped images using sliding window technque. Then us polyfit to find the coefficients.
+
+For subsequences frame, as the lines are detected, the line are idenitified by searching from the previous detected line.
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
