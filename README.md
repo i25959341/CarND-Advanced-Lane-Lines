@@ -77,7 +77,7 @@ Below is the list of techniques used to detect lanes.
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 <p align="center">
- <img src="./img/result.png" alt="Overview" width="100%" height="100%">
+ <img src="./img/resultImage.png" alt="Overview" width="100%" height="100%">
  <br> Result
 </p>
 
