@@ -36,6 +36,10 @@ Below is the list of techniques used to detect lanes.
 ### Pipeline (single images)
 
 #### 1. Provide an example of a distortion-corrected image.
+<p align="center">
+ <img src="./img/camera.png" alt="Overview" width="50%" height="50%">
+ <br>Qualitative results. (click for full video)
+</p>
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
