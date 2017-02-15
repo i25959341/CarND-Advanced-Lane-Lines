@@ -37,11 +37,35 @@ Below is the list of techniques used to detect lanes.
 
 #### 1. Provide an example of a distortion-corrected image.
 <p align="center">
- <img src="./img/camera.png" alt="Overview" width="50%" height="50%">
+ <img src="./img/camera.png" alt="Overview" width="100%" height="100%">
  <br>Qualitative results. (click for full video)
 </p>
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
+<p align="center">
+ <img src="./img/hls.png" alt="Overview" width="100%" height="100%">
+ <br>HLS
+</p>
+
+<p align="center">
+ <img src="./img/luv.png" alt="Overview" width="100%" height="100%">
+ <br>LUV
+</p>
+
+<p align="center">
+ <img src="./img/lab.png" alt="Overview" width="100%" height="100%">
+ <br>LAB
+</p>
+
+<p align="center">
+ <img src="./img/sobel.png" alt="Overview" width="100%" height="100%">
+ <br>SOBEL X
+</p>
+
+<p align="center">
+ <img src="./img/threshold.png" alt="Overview" width="100%" height="100%">
+ <br> Combined
+</p>
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
