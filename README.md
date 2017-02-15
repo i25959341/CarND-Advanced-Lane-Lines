@@ -20,3 +20,11 @@ The goals / steps of this project are the following:
 * Warp the detected lane boundaries back onto the original image.
 * Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
+
+Below is the list of techniques used to detect lanes.
+
+- Camera Calibration: Transformation between 2D image points to 3D object points.
+- Distortion Correction: Consistent representation of the geometrical shape of objects.
+- Perpective Transform: Warping images to effectively view them from a different angle or direction.
+- Edge Detection: Sobel Operator, Magnitude Gradient, Directional Gradient, and HLS Color Space with Color thresholding
+- Sanity Check: Used Coefficients of Polynomial fittings for parrellel line 
