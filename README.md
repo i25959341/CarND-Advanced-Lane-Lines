@@ -70,9 +70,35 @@ Below is the list of techniques used to detect lanes.
 
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
-
+I use the Udacity Histogram method for identifying peaks to find the laneline initially using the threadholded binary warped images. Then us polyfit to find the coefficients.
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
+
+```
+def find_curvature(yvals, fitx):
+    ym_per_pix=30/720 # meters per pixel in y dimension
+    xm_per_pix = 3.7/700 # meters per pixel in x dimension
+    # Define y-value where we want radius of curvature
+    y = np.max(yvals)*ym_per_pix
+    radiusCurvature = ((1 + (2*fitx[0]*y + fitx[1])**2)**1.5)/np.absolute(2*fitx[0])
+    return radiusCurvature
+```
+
+```
+def find_position(left,right):
+    position = image_shape[1]/2
+    ym_per_pix=30/720 # meters per pixel in y dimension
+    xm_per_pix = 3.7/700 # meters per pixel in x dimension
+    
+    left  = left[ (left[:,0] > 700)]
+    right = right[ (right[:,0] > 700)]
+
+    minLeft = np.min(left)
+    minRight = np.max(right)
+    
+    laneCentre = (minLeft + minRight)/2
+    return (position - laneCentre)*xm_per_pix
+```
 
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
@@ -84,3 +110,7 @@ Below is the list of techniques used to detect lanes.
 ###Discussion
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
+
+Most problems come from shadows and noises. This is solved using the averaging of last the 10 fit cofficients to make the land detection more stable. Another important technique used was sanity checking for frame that didnt make sense. This is checked by checking if right and left lane are parrellel within an error and if it is not then these frames are ignored, this solved most of my shadow problem.
+
+There is a lot of rooms for improvement
