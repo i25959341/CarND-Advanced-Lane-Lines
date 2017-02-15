@@ -48,11 +48,6 @@ Below is the list of techniques used to detect lanes.
 </p>
 
 <p align="center">
- <img src="./img/luv.png" alt="Overview" width="100%" height="100%">
- <br>LUV
-</p>
-
-<p align="center">
  <img src="./img/lab.png" alt="Overview" width="100%" height="100%">
  <br>LAB
 </p>
@@ -68,6 +63,11 @@ Below is the list of techniques used to detect lanes.
 </p>
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
+<p align="center">
+ <img src="./img/transform.png" alt="Overview" width="100%" height="100%">
+ <br> Transform
+</p>
+
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
