@@ -81,6 +81,13 @@ I combined the binary thresholds based on the above mentioned thresholds, to cre
 | 810, 482    | 1280, 0     |
 | 1250, 720    | 1250, 720   |
 | 40, 720     | 40, 720     |
+
+| Source        | Destination   | 
+|:-------------:|:-------------:| 
+| 490, 482      | 0, 0          | 
+| 810, 482      | 1280, 0       |
+| 1250, 720     | 1250, 720     |
+| 40, 720       | 40, 720       |
  
  This is what the image looked like after the perspective transform.
  
