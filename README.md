@@ -74,13 +74,6 @@ I combined the binary thresholds based on the above mentioned thresholds, to cre
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
  I use OpenCV's getPerspectiveTransform and warpPerspective to change the perspective of the image to a bird's eye view in order to focus directly on the lane lines. This method takes coordinates of input and output quadrilaterals, which are shown below.
- 
- | Inputs        | Ouputs   | 
-|:-------------:|:-------------:| 
-| 490, 482     | 0, 0       | 
-| 810, 482    | 1280, 0     |
-| 1250, 720    | 1250, 720   |
-| 40, 720     | 40, 720     |
 
 | Source        | Destination   | 
 |:-------------:|:-------------:| 
